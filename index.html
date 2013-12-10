@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Focus</title>
+        <link rel='stylesheet' type='text/css' href='main.css'/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("ouline-color", "blue");
+                    $(this).css("outline-style", "solid");
+                });
+            });
+        </script>
+    </head>
+	<body>
+		<form>
+			Name: <input type='text' name='name'></input>
+		</form>
+	</body>
+</html>
